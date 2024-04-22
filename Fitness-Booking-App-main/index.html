@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+    <link rel="stylesheet" href="styles.css" />
+    <title>Cardiff Met | Fitness App</title>
+  </head>
+  <body>
+
+  
+    <header class="header">
+      <nav>
+        <div class="nav__header">
+          <div class="nav__logo">
+            <a href="#"><img src="cardiffmet.webp" alt="logo" />Cardiff Met Fitness App</a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <span><i class="ri-menu-line"></i></span>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li class="link"><a href="#home">Home</a></li>
+          <li class="link"><a href="#about">Facilities</a></li>
+          <li class="link"><a href="#class">Booking</a></li>
+          <li class="link"><a href="#class">Contact Us</a></li>
+          <li class="link"><button class="btn">Sign Up</button></li>
+          <li class="link"><button class="btn">Login</button></li>
+        </ul>
+      </nav>
+      <div class="section__container header__container" id="home">
+        <div class="header__image">
+          <img src="gympic1.webp" alt="header" />
+        </div>
+        <div class="header__content">
+          <h4>Join Us Right Now</h4>
+          <h1 class="section__header">Start Today</h1>
+          <p>
+          Join us now and book below with options to Join
+          our range of classes from HIIT to group exercises,
+          the choice is yours.
+          </p>
+          <div class="header__btn">
+            <button class="btn">Live Gym Members count</button>
+            <button class="btn">Live PT Count</button>
+            <button class="btn">Training Plan</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="section__container about__container" id="about">
+      <div class="about__image">
+        <img class="about__bg" src="assets/dot-bg.png" alt="bg" />
+        <img src="gympic2.webp" alt="about" />
+      </div>
+      <div class="about__content">
+        <h2 class="section__header">Facilities</h2>
+        <p class="section__description">
+          Led by our team of expert and motivational instructors, "The Class You
+          Will Get Here" is a high-energy, results-driven session that combines
+          a perfect blend of cardio, strength training, and functional
+          exercises.
+        </p>
+        <div class="about__grid">
+          <div class="about__card">
+            <span><i class="ri-open-arm-line"></i></span>
+            <div>
+              <h4>Open Door Policy</h4>
+              <p>
+                We believe in providing unrestricted access to all individuals,
+                regardless of their fitness level, age, or background.
+              </p>
+            </div>
+          </div>
+          <div class="about__card">
+            <span><i class="ri-shield-cross-line"></i></span>
+            <div>
+              <h4>Fully Insured</h4>
+              <p>
+                Your peace of mind is our top priority, and our commitment to
+                your safety extends to every aspect of your fitness journey.
+              </p>
+            </div>
+          </div>
+          <div class="about__card">
+            <span><i class="ri-p2p-line"></i></span>
+            <div>
+              <h4>Personal Trainer</h4>
+              <p>
+                With personalized workout plans tailored to your needs, we will
+                ensure that you get the most out of your gym experience.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+    <div class="smart-wrap">
+        <div class="smart-forms smart-container wrap-2">
+
+            <div class="form-header header-primary">
+                <h4><i class="fa fa-calendar"></i>Make Gym Reservations in Minutes</h4>
+            </div>
+
+            <form method="post" action="booking.php" id="booking-form">
+                <div class="form-body">
+
+                    <!-- OUR FORM ELEMENTS WILL GO HERE -->
+
+                    <div class="section">
+                        <label for="guestname" class="field-label">Please Enter Your Name</label>
+                        <label for="guestname" class="field prepend-icon">
+                            <input type="text" name="guestname" id="guestname" class="gui-input" required="" placeholder="John Doe/Jane Doe">
+                            <span class="field-icon"><i class="fa fa-user"></i></span>
+                        </label>
+                    </div>
+
+                    <div class="frm-row">
+                        <div class="section colm colm6">
+                            <label for="guestemail" class="field-label">Email Address</label>
+                            <label for="guestemail" class="field prepend-icon">
+                                <input type="email" name="guestemail" id="guestemail" class="gui-input" required="" placeholder="john@something.com">
+                                <span class="field-icon"><i class="fa fa-envelope"></i></span>
+                            </label>
+                        </div>
+
+                        <div class="section colm colm6">
+                            <label for="guestelephone" class="field-label">Telephone / Mobile</label>
+                            <label for="guestelephone" class="field prepend-icon">
+                                <input type="text" name="guestelephone" id="guestelephone" class="gui-input" required="" placeholder="Telephone / Mobile Number">
+                                <span class="field-icon"><i class="fa fa-phone-square"></i></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Additional form fields for gym reservations -->
+
+                    <div class="frm-row">
+                        <div class="section colm colm6">
+                            <label for="checkin" class="field-label">Check-in Date</label>
+                            <label for="checkin" class="field prepend-icon">
+                                <input type="text" id="checkin" name="checkin" class="gui-input" required="" placeholder="mm/dd/yyyy">
+                                <span class="field-icon"><i class="fa fa-calendar"></i></span>
+                            </label>
+                        </div>
+
+                        <div class="section colm colm6">
+                            <label for="checkout" class="field-label">Check-out Date</label>
+                            <label for="checkout" class="field prepend-icon">
+                                <input type="text" id="checkout" name="checkout" class="gui-input" required="" placeholder="mm/dd/yyyy">
+                                <span class="field-icon"><i class="fa fa-calendar"></i></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Additional form fields for gym reservations -->
+
+                    <div class="spacer-t20 spacer-b30">
+                        <div class="tagline"><span>Please answer these questions for a pleasant gym experience</span></div>
+                    </div>
+
+                    <div class="frm-row">
+                        <div class="option-group field">
+
+                            <!-- Additional form fields for gym reservations -->
+
+                            <div class="section colm colm6">
+                                <label class="switch">
+                                    <input type="checkbox" name="switch1" id="switch1" value="switch1">
+                                    <span class="switch-label" data-on="YES" data-off="NO"></span>
+                                    <span>Do you need a Personal Trainer?</span>
+                                </label>
+                            </div>
+
+                            <div class="section colm colm6">
+                                <label class="switch">
+                                    <input type="checkbox" name="switch2" id="switch2" value="switch2">
+                                    <span class="switch-label" data-on="YES" data-off="NO"></span>
+                                    <span>Do you need workout guidance?</span>
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <label for="comment" class="field-label">Anything else we should know about?</label>
+                        <label for="comment" class="field prepend-icon">
+                            <textarea class="gui-textarea" id="comment" name="comment" placeholder="Let us know about any special gym-related needs"></textarea>
+                            <span class="field-icon"><i class="fa fa-comments"></i></span>
+                            <span class="input-hint">
+                                <strong>Please:</strong> Be as descriptive as possible
+                            </span>
+                        </label>
+                    </div>
+
+                </div>
+                <div class="form-footer">
+                    <button type="submit" class="button btn-primary">Confirm Gym Booking</button>
+                    <button type="reset" class="button">Cancel</button>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+</section>
+
+
+   
+
+   
+
+    <script src="main.js"></script>
+  </body>
+</html>
